@@ -110,31 +110,43 @@ ________________________________________________________________________________
 ```
 __________________________________________________________________________________________________________________________________________________________________________
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  1 #!/usr/bin/env python3
+  2 '''
+  3 Modify deliverable.py and implement guess_number,
+  4 so that it repeatedly asks the user for a number between 0 and 100 inclusive.
+  5 If the user correctly guesses the value of the given argument n,
+  6 print "WIN" and exit out of the loop. 
+  7 Otherwise indicate whether the guess was "too high" or "too low". 
+  8 Test the deliverable manually,
+  9 or run python3 check.py to run the supplied unit tests.
+ 10 ''' 
+ 11 
+ 12 def guess_number(n):
+ 13     while True:
+ 14         usr = int(input('Type a number:\n'))
+ 15         if usr == n:
+ 16             print('WIN')
+ 17             break
+ 18         elif usr < n:
+ 19             print('too low')
+ 20         elif usr > n:
+ 21             print('too high')
+ 22 guess_number(23)
 ```
+__________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
 __________________________________________________________________________________________________________________________________________________________________________
 ```
 student@lin-ops:~$ python3
