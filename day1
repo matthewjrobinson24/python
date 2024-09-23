@@ -51,6 +51,14 @@ input()                            #takes user input
  5     print('Go Bo')
  6 else:
  7     print('Pick a different team!')
+
+ 1 num = int(input('Type a positive number:\n'))
+ 2 if num >= 0 and num <= 10:
+ 3     print('{} is between 0 and 10'.format(num))
+ 4 elif num > 10:
+ 5     print('{} is greater than 10'.format(num))
+ 6 else:
+ 7     print('Type a positive number please!')
 ___________________________________________________________________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________________________________________________________________
