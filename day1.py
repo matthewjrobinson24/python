@@ -61,7 +61,9 @@ input()                            #takes user input
  7     print('Type a positive number please!')
 ___________________________________________________________________________________________________________________________________________________________________________
   1 #!/usr/bin/env python3
-  2 #Modify deliverable.py so that it takes a number from the user and prints it     (the number) if it isn’t divisible by 3 or 5. For multiples of 3 print 'fiz    z' instead. For multiples of 5 print 'buzz' instead. For multiples of 3 and     5 print 'fizzbuzz'.
+  2 #Modify deliverable.py so that it takes a number from the user and prints it
+    #(the number) if it isn’t divisible by 3 or 5. For multiples of 3 print 'fizz' instead. 
+    #For multiples of 5 print 'buzz' instead. For multiples of 3 and 5 print 'fizzbuzz'.
   3 def fizzbuzz(): 
   4   num = int(input('Type a positive number:\n'))
   5   if num % 5 == 0 and num % 3 == 0:
