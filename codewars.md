@@ -98,9 +98,13 @@ def sum_mix(arr):
     return sum(map(int, arr))
 ```
 _________________________________________________________________________________________________________________________________
-
+Build a function that returns an array of integers from n to 1 where n>0.
 ```
-
+def reverse_seq(a):
+    if a > 0:
+        return(list(range(a, 0, -1)))
+    else:
+        return("pick a positive number")
 ```
 _________________________________________________________________________________________________________________________________
 
