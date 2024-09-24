@@ -3,7 +3,7 @@
 .join()                    #join '*'.join(dlist)
 .split()                   #splits on specified .split(':')
 range                      #list(range(0,10,1)) start/stop/step or just range(10)
-
+len                        #len(variable) gives the length of the values inside the variable
 ```
 ____________________________________________________________________________________________________________________________________________________________________
 ```
