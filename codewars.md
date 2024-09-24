@@ -29,9 +29,22 @@ def greet(name):
     return f'Hello, {name} how are you doing today?'
 ```
 _________________________________________________________________________________________________________________________________
+Given an array of integers.
 
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
 ```
-
+def count_positives_sum_negatives(arr):
+    if not arr: return []
+    pos = 0
+    neg = 0
+    for x in arr:
+      if x > 0:
+          pos += 1
+      if x < 0:
+          neg += x
+    return [pos, neg]
 ```
 _________________________________________________________________________________________________________________________________
 
