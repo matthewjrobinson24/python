@@ -353,4 +353,46 @@ NameError: name 'lst' is not defined
 ()
 >>>
 ```
+______________________________________________________________________________________________________________________
+Challenge: Using the file school_prompt.txt, assign the third word of every line to a list called three.
+```
+three = []
+with open('school_prompt.txt') as fp:
+    for line in fp:
+        three.append(line.split()[2])
+```
+______________________________________________________________________________________________________________________
+Challenge: Create a list called emotions that contains the first word of every line in emotion_words.txt.
+```
+emotions = []
+with open('emotion_words.txt') as fp:
+    for line in fp:
+        emotions.append(line.split()[0])
+
+```
+_______________________________________________________________________________________________________________________
+Challenge: Using the file school_prompt.txt, if the character ‘p’ is in a word, then add the word to a list called p_words.
+```
+p_words = []
+with open('school_prompt.txt') as fp:
+    for line in fp:
+        for word in line.split():
+            if 'p' in word:
+                p_words.append(word)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 __________________________________________________________________________________________________________________________________________________________________________
