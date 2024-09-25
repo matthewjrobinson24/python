@@ -380,6 +380,15 @@ with open('school_prompt.txt') as fp:
             if 'p' in word:
                 p_words.append(word)
 ```
+________________________________________________________________________________________________________________________
+```
+with open('text.txt') as outfile:
+    with open('007.txt','w') as infile:
+        for line in outifle:
+            if 'Third' in line.split():
+                infile.write('Third')
+```
+_________________________________________________________________________________________________________________________
 
 
 
