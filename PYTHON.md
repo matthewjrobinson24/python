@@ -563,64 +563,72 @@ with open("school_prompt.txt") as fp:
 .upper() and .lower()
 
 captilizes and lowercases characters in a string
-Python Practice
-Question 1
+_________________________________________________________________________________________________________________________
+# Python Practice:
+
+## Q1
 
 Given the floatstr, which is a comma separated string of floats, return a list with each of the floats in the argument as elements in the list.
-
+```
 lst = []
 for i in floatstr.split(','):
     lst.append(float(i))
 return lst
-
-Question 2
+```
+_________________________________________________________________________________________________________________________
+## Q2
 
 Given the variable length argument list, return the average of all the arguments as a float.
-
+```
 type(args)
     sum = 0 
     for addend in args:
         sum += addend
         avg = sum / float(len(args))
     return avg 
-
-Question 3
+```
+_________________________________________________________________________________________________________________________
+## Q3
 
 Given a list (lst) and a number of items (n), return a new list containing the last n entries in lst.
-
+```
 lst1 = []
     for i in lst[-n:]:
         lst1.append(int(i))
     return lst1
-
-Question 4
+```
+_________________________________________________________________________________________________________________________
+## Q4
 
 Given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
-
+```
   lst = []
     for i in strng:
         lst.append(ord(i))
     return lst 
-
-Question 5
+```
+_________________________________________________________________________________________________________________________
+## Q5
 
 Given an input string, return a tuple with each element in the tuple containing a single word from the input string in order.
-
+```
  arr = []
     arr = strng.split(' ')
     t = tuple(arr)
     return t
-
-Question 6
+```
+_________________________________________________________________________________________________________________________
+## Q6
 
 Given a dictionary (catalog) whose keys are product names and values are product prices per unit and a list of tuples (order) of product names and quantities, compute and return the total value of the order.
-
+```
  total = 0
     for i in order:
         total += catalog[i[0]]*i[1]
     return total
-
-# Q7
+```
+_________________________________________________________________________________________________________________________
+## Q7
 
 Given a filename, open the file and return the length of the first line in the file excluding the line terminator.
 ```
@@ -629,7 +637,7 @@ Given a filename, open the file and return the length of the first line in the f
         return(len(i)) -1
 ```
 _________________________________________________________________________________________________________________________
-# Q8
+## Q8
 
 Given a filename and a list, write each entry from the list to the file on separate lines until a case-insensitive entry of "stop" is found in the list. If "stop" is not found in the list, write the entire list to the file on separate lines.
 ```
@@ -641,7 +649,7 @@ with open(filename, 'w') as fp:
                 fp.write('{}\n'.format(word))
 ```
 _________________________________________________________________________________________________________________________
-# Q9
+## Q9
 
 Given the military time in the argument miltime, return a string containing the greeting of the day. 0300-1159 "Good Morning" 1200-1559 "Good Afternoon" 1600-2059 "Good Evening" 2100-0259 "Good Night"
 ```
@@ -655,7 +663,7 @@ Given the military time in the argument miltime, return a string containing the 
         return "Good Night"
 ```
 _________________________________________________________________________________________________________________________
-# Q10:
+## Q10:
 
 Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
 ```
