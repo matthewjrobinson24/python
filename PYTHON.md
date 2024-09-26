@@ -1,7 +1,9 @@
-Day1
+# Day1:
+
 ssh Command
 
 This command will login to our Linops as student: ssh student@10.x.x.x -X
+_________________________________________________________________________________________________________________________
 For Loop
 
 This is a for loop example "Print each fruit in a list"
@@ -9,11 +11,11 @@ This is a for loop example "Print each fruit in a list"
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   print(x)
-
+_________________________________________________________________________________________________________________________
 Set up Vim
 
 vim $HOME/.vimrc:
-
+_________________________________________________________________________________________________________________________
 syntax enable
 set tabstop=4
 set shiftwidth=4
@@ -21,12 +23,12 @@ set expandtab
 set number
 filetype indent on
 set autoindent
-
+_________________________________________________________________________________________________________________________
 URL for Handbook
 
 This is the URL: https://git.cybbh.space/programming/python/public.git
 Split
-
+_________________________________________________________________________________________________________________________
 >>> 'user:passwd'.split(':')
 ['user', 'passwd']
 
@@ -52,7 +54,7 @@ and
 >>> b = 'today'
 >>> 'Hello {}. How are you {}?'.format(a,b)
 'Hello Albert. How are you today?'
-
+_________________________________________________________________________________________________________________________
 Activity 'Email Splitting'
 Instructions: Given an email address of the form name@somewhere.com, create a list consisting of the 3 portions (i.e. ['name','somewhere','com']).
 
@@ -74,8 +76,9 @@ b = b[1]
 b = b.split('.')
 email_list = [a, b[0], b[1]]
 print(email_list)
+_________________________________________________________________________________________________________________________
+# Day2:
 
-Day 2
 For Loop with Incorporated if Statement
 
 def count_sheeps(array_of_sheep):
@@ -225,8 +228,9 @@ elif x %5 == 0:
     print('buzz')
 else:
     print(x)
+_________________________________________________________________________________________________________________________
+# Day3:
 
-Day 3
 ord() and chr()
 ord() returns the number associated with the ASCII character. chr() returns the character representation of the numeric argument.
 
@@ -518,7 +522,7 @@ Second line
 Third line
 Fourth line
 Last line
-
+_________________________________________________________________________________________________________________________
 Question1: The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable num. (Answer: 316)
 
 num = 0
