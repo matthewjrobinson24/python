@@ -620,29 +620,31 @@ Given a dictionary (catalog) whose keys are product names and values are product
         total += catalog[i[0]]*i[1]
     return total
 
-Question 7
+# Q7
 
 Given a filename, open the file and return the length of the first line in the file excluding the line terminator.
-
+```
  with open(filename, 'r') as fp:
         i = fp.readline()
         return(len(i)) -1
-
-Question 8
+```
+_________________________________________________________________________________________________________________________
+# Q8
 
 Given a filename and a list, write each entry from the list to the file on separate lines until a case-insensitive entry of "stop" is found in the list. If "stop" is not found in the list, write the entire list to the file on separate lines.
-
+```
 with open(filename, 'w') as fp:
         for word in lst:
             if word.lower() == 'stop':
                 break
             else:
                 fp.write('{}\n'.format(word))
+```
 _________________________________________________________________________________________________________________________
 # Q9
-```
-Given the military time in the argument miltime, return a string containing the greeting of the day. 0300-1159 "Good Morning" 1200-1559 "Good Afternoon" 1600-2059 "Good Evening" 2100-0259 "Good Night"
 
+Given the military time in the argument miltime, return a string containing the greeting of the day. 0300-1159 "Good Morning" 1200-1559 "Good Afternoon" 1600-2059 "Good Evening" 2100-0259 "Good Night"
+```
  if miltime >= 300 and miltime <= 1159:
         return "Good Morning"
  elif miltime >= 1200 and miltime <= 1559:
@@ -654,9 +656,9 @@ Given the military time in the argument miltime, return a string containing the 
 ```
 _________________________________________________________________________________________________________________________
 # Q10:
-```
-Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
 
+Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
+```
  for i in numlist:
         if i < 0:
             return False
